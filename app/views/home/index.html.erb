@@ -1,4 +1,7 @@
 
+<head>
+  <%= javascript_include_tag 'application', 'data-turbo-track': 'reload' %>
+</head>
 <div class="text-center mt-10 napisog">
   <div class="napiswy">
   <h1 class="text-6xl font-bold text-blue-600">Witamy w Shotphoto</h1>
@@ -10,6 +13,9 @@
   <a class="linkphoto" href="/photos">
   <h2 class="c">DODAwaj</h2></a>
   <h4>dziel się</h4>
+  <%= link_to 'Wyloguj', destroy_user_session_path, method: :delete %>
+
+
 
 
 </div>
