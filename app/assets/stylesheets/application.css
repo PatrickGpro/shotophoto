@@ -6,10 +6,30 @@
 
 .napiswy{
     font-family: 'arial';
+
 }
 .napisdol{
     font-family: 'Lato';
 }
 .napisog{
     text-align: center;
+    
+}
+.dodaj{
+    background-color: rgba(24, 199, 234, 0.491);
+    height: 20vh;
+    width: 70%;
+    border-radius: 2%;
+    font-family: 'Lato';
+    font-size: 8vh;
+    color: white;
+    border: white;
+    
+}
+.c{
+    color:rgba(24, 199, 234, 0.491);;
+}
+
+.linkphoto{
+    text-decoration: none;
 }
