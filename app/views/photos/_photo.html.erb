@@ -1,10 +1,15 @@
-<p><strong>Title:</strong> <%= photo.title %></p>
+
 
 <% if photo.image.attached? %>
-  <p><strong>Image:</strong></p>
-  <%= image_tag photo.image, class: "max-w-sm rounded-md mt-4" %>
+  
+  <%= image_tag photo.image, class: "zdjecie" %>
 <% else %>
   <p><strong>Image:</strong> Brak zdjęcia</p>
 <% end %>
+<div class="opis">
+ <%= photo.user.email %>
 
-<p><strong>User:</strong> <%= photo.user_id %></p>
+<%= photo.title %>
+</p>
+
+</div>

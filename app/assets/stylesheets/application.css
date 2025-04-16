@@ -33,3 +33,80 @@
 .linkphoto{
     text-decoration: none;
 }
+.zdjecie {
+    width: 30vw;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Dla tabletów i telefonów */
+  @media (max-width: 1024px) {
+    .zdjecie {
+      width: 80vw;
+      height: 90vw;
+    }
+  }
+
+.napisglowny{
+    text-align: center;
+    font-family: 'Lato';
+}
+.new_photo_path{
+    text-align: center;
+    
+}
+.linkhome{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-family: 'Lato';
+}
+.header {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie przycisku */
+    align-items: center;     /* Centrowanie pionowe */
+    gap: 10px;
+  }
+  
+  .add-photo-button {
+    padding: 8px 15px;
+    background-color: #3182ce;
+    color: white;
+    border-radius: 17%;
+    font-weight: 500;
+    width: 5vh;
+    text-align: center; /* Wewnętrzny tekst będzie wyśrodkowany */
+    text-decoration: none;
+  }
+ .photo-list{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 40px auto;
+
+ }
+ .show-button,
+ .edit-button,
+ .delete-button {
+   padding: 6px 12px;
+   font-size: 0.875rem;
+   color: #4a5568;
+   background-color: #e2e8f0;
+   border-radius: 5px;
+   text-decoration: none;
+   text-align: center;
+   border: none;
+   transition: background-color 0.3s ease;
+ }
+ .delete-button{
+    margin-top: 1%;
+    background-color: red;
+    color: white;
+ }
+.opis{
+    text-align: left;
+}
