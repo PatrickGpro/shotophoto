@@ -38,15 +38,18 @@
     height: 70vh;
     object-fit: cover;
     border-radius: 10px;
+    display: block;
+    margin: 20px auto;
   }
   
-  /* Dla tabletów i telefonów */
+ 
   @media (max-width: 1024px) {
     .zdjecie {
       width: 80vw;
       height: 90vw;
     }
   }
+  
 
 .napisglowny{
     text-align: center;
@@ -110,3 +113,213 @@
 .opis{
     text-align: left;
 }
+/* devises */
+/* Styl ogólny kontenera formularza */
+.devise-form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Nagłówek */
+  .devise-form h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Pola formularza */
+  .devise-form .field {
+    margin-bottom: 16px;
+  }
+  
+  .devise-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .devise-form input[type="email"],
+  .devise-form input[type="password"],
+  .devise-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+  
+  /* Checkbox */
+  .devise-form input[type="checkbox"] {
+    margin-right: 6px;
+  }
+  
+  /* Przycisk zaloguj */
+  .devise-form .actions input[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .devise-form .actions input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Linki na dole (np. zapomniałeś hasła) */
+  .devise-form .links {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .devise-form .links a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .devise-form .links a:hover {
+    text-decoration: underline;
+  }
+  .new-photo-container {
+    max-width: 66%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .new-photo-title {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .photo-form-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  .back-to-photos-link {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 18px;
+    background-color: #f3f4f6;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #1a202c;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .back-to-photos-link:hover {
+    background-color: #f9fafb;
+  }
+  
+  /* Responsywność */
+  @media (max-width: 768px) {
+    .new-photo-container {
+      width: 95%;
+    }
+  }
+  
+  .show-photo-container {
+    max-width: 66%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .notice-message {
+    padding: 10px 15px;
+    background-color: #d1fae5; /* bg-green-50 */
+    color: #10b981; /* text-green-500 */
+    font-weight: 500;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  .show-photo-title {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .photo-author {
+    color: #6b7280; /* text-muted */
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  .show-photo-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .show-photo-buttons a,
+  .show-photo-buttons form button {
+    padding: 10px 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .edit-link,
+  .back-link {
+    background-color: #f3f4f6;
+    color: #1a202c;
+  }
+  
+  .edit-link:hover,
+  .back-link:hover {
+    background-color: #f9fafb;
+  }
+  
+  .destroy-button {
+    background-color: #dc2626;
+    color: white;
+  }
+  
+  .destroy-button:hover {
+    background-color: #ef4444;
+  }
+  
+  /* Responsywność */
+  @media (max-width: 768px) {
+    .show-photo-container {
+      width: 95%;
+    }
+  
+    .show-photo-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .show-photo-buttons a,
+    .show-photo-buttons form button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
