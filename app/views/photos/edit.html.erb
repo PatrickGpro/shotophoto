@@ -1,10 +1,20 @@
+<div class="header">
+  <a class="linkhome" href="http://127.0.0.1:3000/">
+    <h1 class="title">Shotphoto</h1>
+  </a>
+</div>
+
 <% content_for :title, "Editing photo" %>
 
-<div class="md:w-2/3 w-full">
-  <h1 class="font-bold text-4xl">Editing photo</h1>
+<div class="new-photo-container">
+  <h1 class="new-photo-title">Edytuj Posta</h1>
 
-  <%= render "form", photo: @photo %>
+  <div class="photo-form-wrapper">
+    <%= render "form", photo: @photo %>
+  </div>
 
-  <%= link_to "Show this photo", @photo, class: "w-full sm:w-auto text-center mt-2 sm:mt-0 sm:ml-2 rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium" %>
-  <%= link_to "Back to photos", photos_path, class: "w-full sm:w-auto text-center mt-2 sm:mt-0 sm:ml-2 rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium" %>
+  <div class="show-photo-buttons">
+    <%= link_to "Zobacz posta", @photo, class: "edit-link" %>
+    <%= link_to "Powrót do listy postów", photos_path, class: "back-link" %>
+  </div>
 </div>

@@ -3,15 +3,15 @@
     <p class="notice-message" id="notice"><%= notice %></p>
   <% end %>
 
-  <h1 class="show-photo-title">Pokaż zdjecie</h1>
+  <h1 class="show-photo-title">Pokaż posta</h1>
 
   <%= image_tag url_for(@photo.image), class: "zdjecie" if @photo.image.attached? %>
 
   <p class="photo-author">Dodane z konta: <%= @photo.user.email %></p>
 
   <div class="show-photo-buttons">
-    <%= link_to "Edit this photo", edit_photo_path(@photo), class: "edit-link" %>
-    <%= link_to "Back to photos", photos_path, class: "back-link" %>
-    <%= button_to "Destroy this photo", @photo, method: :delete, form_class: "destroy-form", class: "destroy-button", data: { turbo_confirm: "Are you sure?" } %>
+    <%= link_to "Edytuj", edit_photo_path(@photo), class: "edit-link" %>
+    <%= link_to "Powrót", photos_path, class: "back-link" %>
+    <%= button_to "Usuń", @photo, method: :delete, form_class: "destroy-form", class: "destroy-button", data: { turbo_confirm: "Are you sure?" } %>
   </div>
 </div>
